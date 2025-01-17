@@ -1,1 +1,87 @@
+:root {
+    --line-border-fill: #f08080;
+    --line-border-empty: #20b2aa;
+    --text-color: #8b008b;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 80%;
+    width: 300px;
+}
+
+button {
+    background-color:  var(--line-border-fill);
+    color: var(--text-color);
+}
+
+.progress {
+    background-color:  var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 5px;
+    border-radius: 4px;
+    width: 0%;
+    z-index: 2;
+    transition: 0.4s ease;
+}
+
+.progress-container::before {
+    content: "";
+    /* if you use before, you need to add content: ""; to show the object.  */
+    background-color:  var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 5px;
+    border-radius: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circle {
+background-color: #fff;
+color: var(--text-color);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 3px solid  var(--line-border-empty);
+transition: .4 ease;
+}
+
+circle.active {
+border-color: var(--line-border-fill);
+}
 
