@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Expanding cards.css" />
+        <title>Expanding cards</title>
+    </head>
+    <body>
+        <h1>7 reasons to visit Austria</h1>
+        <div class="container">
+            <div class="panel active" style="background-image: url(https://cdn.pixabay.com/photo/2021/11/08/23/29/nature-6780354_960_720.jpg)" alt="Foggy morning at mountain side farm">
+                <h3>Foggy morning in Austria</h3>
+            </div>
+
+            <div class="panel" style="background-image: url(https://cdn.pixabay.com/photo/2022/01/12/19/28/mountains-6933693_960_720.jpg)" alt="Old stone house in the mountains">
+                <h3>Mountain cabin</h3>
+            </div>
+
+            <div class="panel" style="background-image: url(https://cdn.pixabay.com/photo/2017/11/18/19/58/cabin-2961098_960_720.jpg)" alt="Autumn colors reflecting from the lake at Dolomites">
+                <h3>Dolomites beach</h3>
+            </div>
+
+            <div class="panel" style="background-image: url(https://cdn.pixabay.com/photo/2023/11/01/11/12/hallstatt-8357170_960_720.jpg)" alt="Hallstad is a picture perfect village cramped between mountain and lake">
+                <h3>Hallstad village</h3>
+            </div>
+
+            <div class="panel" style="background-image: url(https://cdn.pixabay.com/photo/2022/10/15/23/20/hallstatt-7524006_960_720.jpg)" alt="Hallstadt harbor. Boat hoses standing in line near the water">
+                <h3>Hallstadt harbor</h3>
+            </div>
+            <div class="panel" style="background-image: url(https://cdn.pixabay.com/photo/2014/09/08/19/17/church-439488_960_720.jpg)" alt="Decorative details from medieval church">
+                <h3>Medieval church</h3>
+            </div>
+            <div class="panel" style="background-image: url(https://cdn.pixabay.com/photo/2021/01/30/18/07/salzburg-5964812_960_720.jpg)" alt="Salzburg city architecture at night">
+                <h3>Salzburg architecture</h3>
+            </div>
+        </div>
+        <script src="Expanding cards.js"></script>
+    </body>
+</html>
