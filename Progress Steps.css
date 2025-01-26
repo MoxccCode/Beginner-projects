@@ -1,5 +1,5 @@
 :root {
-    --line-border-fill: #f08080;
+    --koral: #f08080;
     --line-border-empty: #20b2aa;
     --text-color: #8b008b;
 }
@@ -44,14 +44,14 @@ body {
     height: 5px;
     border-radius: 4px;
     width: 0%;
-    z-index: 2;
+    z-index: -1;
     transition: 0.4s ease;
 }
 
 .progress-container::before {
     content: "";
     /* if you use before, you need to add content: ""; to show the object.  */
-    background-color:  var(--line-border-empty);
+    background-color:  lightblue;
     position: absolute;
     top: 50%;
     left: 0;
@@ -74,14 +74,16 @@ body {
     justify-content: center;
     border: 3px solid  var(--line-border-empty);
     transition: .4 ease;
+    z-index: 3;
 }
 
 circle.active {
-    background-color: var(--line-border-fill);
+    z-index: 2;
+    background-color: var(--koral);
 }
 
 .btn {
-    background-color:  var(--line-border-fill);
+    background-color:  var(--koral);
     border-radius: 5px;
     color: var(--text-color);
     border: solid 3px var(--line-border-empty);
@@ -106,6 +108,6 @@ circle.active {
 }
 
 circle.active {
-border-color: var(--line-border-fill);
+border-color: var(--koral);
 }
 
